@@ -112,7 +112,8 @@
 
 	<script>
 
-		var suma = document.getElementById("suma");{
+		var suma = document.getElementById("suma");
+		{
 			suma.addEventListener("click", function(){
 				var numero1 = parseFloat(document.getElementById("numero1").value);
 				var numero2 = parseFloat(document.getElementById("numero2").value);
@@ -134,6 +135,14 @@
 
 
 		var multiplica = document.getElementById("multiplica");
+		{
+			multiplica.addEventListener("click", function(){
+				var numero1 = parseFloat(document.getElementById("numero1").value);
+				var numero2 = parseFloat(document.getElementById("numero2").value);
+				var resultado = numero1 * numero2;
+				document.getElementById("resultado").innerText = resultado;
+			});
+		}
 
 
 		var divide = document.getElementById("divide");
